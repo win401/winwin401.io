@@ -1,0 +1,579 @@
+@charset "utf-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Montserrat", "Noto Sans KR", sans-serif;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.container .fixed {
+  z-index: 99999999;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  position: fixed;
+  background-color: white;
+}
+.container .fixed img {
+  width: 75px;
+}
+
+.container header {
+  background-color: #dddd;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container header .text-box {
+  position: absolute;
+  top: 13%;
+  text-align: center;
+  width: 80%;
+}
+.container header .text-box h3 {
+  font-family: sans-serif;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #8a8a8add;
+}
+.container header .text-box h4 {
+  font-size: 3.2rem;
+  text-transform: capitalize;
+  margin: 30px;
+  font-weight: 300;
+}
+.container header .play-btn {
+  margin-top: 30px;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 4rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  margin-bottom: 100px;
+}
+.container header .play-btn:hover {
+  background-color: lightblue;
+  transform: scale(1.2);
+}
+.container header .play-btn a {
+  display: block;
+}
+.container header .play-btn a span {
+  width: 80%;
+}
+.container header .headphone {
+  width: 80%;
+  object-fit: cover;
+  position: absolute;
+  bottom: 50px;
+}
+.container header .fixedkakao {
+  position: fixed;
+  bottom: 20px;
+  left: 30px;
+  z-index: 999999;
+}
+
+.container header .number {
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #8b8b8b;
+}
+.container header .number a:last-child span {
+  color: black;
+}
+.container header .number span:last-child::after {
+  content: "";
+  background-color: black;
+  width: 25px;
+  height: 2px;
+  position: absolute;
+  bottom: 18px;
+  left: 90px;
+}
+
+/* main */
+
+main .text-box {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; */
+  /* height: 100vh; */
+  /* width: 85%; */
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+main .text-box .txt {
+  /* width: 90%; */
+  padding: 20px 0;
+  /* border-bottom: 1px solid rgb(226, 226, 226); */
+}
+main .text-box .txt:last-child {
+  border-bottom: none;
+  /* margin-bottom: 30px; */
+}
+main .text-box .txt h3 {
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-indent: 35px;
+}
+main .text-box .txt p {
+  line-height: 2;
+  width: 85%;
+  margin: 0 auto;
+  font-weight: 500;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+  /* font-weight: bold; */
+  border-bottom: 1px solid #ddd;
+}
+
+main .text-box .txt4 p {
+  border-bottom: none;
+}
+main .text-box .txt {
+  /* margin-bottom: 50px; */
+}
+
+main .img-box {
+  text-transform: capitalize;
+  width: 100%;
+}
+
+main .img-box .img {
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+  height: 350px;
+  margin-bottom: 10px;
+}
+main .img-box .img p {
+  width: 100%;
+}
+main .img-box .img:nth-child(4) {
+  height: 175px;
+}
+
+main .img-box .img:nth-child(5) {
+  height: 175px;
+}
+
+main .img-box .img1 {
+  background: url(./image/1.jpg) no-repeat 50% / cover;
+  margin-top: 40px;
+}
+main .img-box .img2 {
+  background: url(./image/2.jpg) no-repeat 50% / cover;
+}
+main .img-box .img3 {
+  background: url(./image/7.jpg) no-repeat 50% / cover;
+}
+main .img-box .img4 {
+  background: url(./image/4.jpg) no-repeat 50% / cover;
+}
+main .img-box .img5 {
+  background: url(./image/5.jpg) no-repeat 50% / cover;
+}
+main .img-box .img6 {
+  background: url(./image/6.jpg) no-repeat 50% / cover;
+}
+main .img-box .img7 {
+  background: url(./image/3.jpg) no-repeat 50% / cover;
+}
+h1 {
+  font-size: 2rem;
+}
+
+main .our {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  /* border-bottom: none; */
+}
+main .our h1 {
+  position: relative;
+  margin: 40px 0;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+main .our h1::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 50px;
+  height: 2px;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+main .our p {
+  font-size: 1.1rem;
+  /* color: #a0a0a0; */
+  font-family: sans-serif;
+}
+
+main .img-box .img p {
+  background-color: rgba(0, 0, 0, 0);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* transform: translateY(-100px); */
+  transition: 0.3s;
+}
+main .img-box .img p a {
+  display: block;
+  transform: translateY(-10px);
+  opacity: 0;
+  transition: 0.5s;
+}
+main .img-box .img p a:hover {
+  color: rgb(0, 155, 207);
+}
+main .img-box .img:hover p {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+main .img-box .img:hover p a {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* main img-txt-box */
+
+main .img-txt-box {
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+main .img-txt-box h5 {
+  margin-top: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+main .img-txt-box p {
+  margin-bottom: 40px;
+  line-height: 1.5;
+  /* font-weight: 500; */
+  font-family: sans-serif;
+}
+
+main .img-txt-box img {
+  object-fit: cover;
+  width: 100%;
+}
+
+/* main youtube */
+
+main .youtube {
+  background-color: #ebebeb;
+  padding: 30px;
+}
+
+main .youtube h3 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+main .youtube p {
+  margin-bottom: 60px;
+  font-family: sans-serif;
+  font-size: 1.1rem;
+}
+
+main .youtube video {
+  width: 100%;
+}
+
+/* main sub */
+
+main .sub {
+  margin: 0 auto;
+  width: 90%;
+}
+main .sub .shadow {
+  box-shadow: 3px 6px 14px -9px rgba(0, 0, 0, 0.5);
+}
+
+main .sub h1 {
+  text-align: center;
+  position: relative;
+  margin: 40px 0 100px;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+main .sub h1::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 50px;
+  height: 3px;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+main .sub img {
+  width: 100%;
+}
+
+main .sub h5 {
+  font-weight: bold;
+  margin: 20px 0;
+  text-indent: 20px;
+}
+
+main .sub p {
+  color: #a0a0a0;
+  padding: 0 20px;
+}
+
+/* main select-btn */
+
+main .select-btn {
+  width: 100%;
+  height: 50px;
+  /* position: relative; */
+  margin-top: 50px;
+}
+
+main .select-btn ul {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+main .select-btn ul li {
+  width: 7px;
+  aspect-ratio: 1;
+  background-color: lightblue;
+  margin: 5px;
+  border-radius: 50%;
+}
+main .select-btn ul li:nth-child(2) {
+  background-color: rgb(0, 112, 187);
+}
+
+/* main logos */
+
+main .logos {
+  background-color: #f0f0f0;
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+  height: 60vh;
+}
+
+main .logos img {
+  width: 100%;
+  opacity: 0.5;
+  transition: 0.5s;
+  cursor: pointer;
+}
+main .logos img:hover {
+  opacity: 1;
+}
+
+/* main location */
+
+main .location {
+  padding: 30px;
+  /* text-align: center; */
+}
+
+main .location h1 {
+  font-size: 2.5rem;
+}
+
+main .location h3 {
+  font-family: sans-serif;
+}
+
+:is(main .location) h3,
+h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+main .location .flex {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgb(184, 184, 184);
+  padding: 10px;
+  position: relative;
+}
+
+main .location .flex h3:first-child::after {
+  content: "";
+  background-color: black;
+  width: 200px;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* main location-txt */
+
+main .location-txt {
+  font-family: sans-serif;
+}
+
+main .location-txt h5 {
+  margin: 30px 0 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+main .location-txt p {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+main .location-txt p:last-child {
+  border-bottom: 1px solid black;
+}
+
+/* main letstalk */
+
+main .letstalk {
+  opacity: 0.7;
+  margin-top: 50px;
+  height: 40vh;
+  background: url(./image/img-bg.jpg) no-repeat 50% / cover;
+  background-color: rgb(0, 92, 153);
+  background-blend-mode: multiply;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+main .letstalk h3 {
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+main .letstalk p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  width: 95%;
+  margin: 0 auto;
+}
+
+main .letstalk a {
+  display: block;
+  margin: 40px auto 0;
+  border: 2px solid white;
+  padding: 15px 20px;
+  width: 45%;
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+main .letstalk a:hover {
+  background-color: white;
+  color: rgb(47, 151, 185);
+}
+
+/* footer */
+
+footer {
+  font-family: sans-serif;
+}
+
+footer img {
+  margin: 95px 10px;
+}
+
+footer .text {
+  padding: 10px;
+}
+footer .text h5 {
+  margin-bottom: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+footer .text p {
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+footer .lowfooter {
+  background-color: #eeeeee;
+  padding: 50px;
+  text-align: center;
+}
+footer .lowfooter p span {
+  display: block;
+  margin-top: 20px;
+}
+
+footer .icon {
+  width: 50%;
+  height: 100px;
+  display: flex;
+}
+
+footer .icon a {
+  height: 50%;
+  transition: 0.5s;
+  display: block;
+  /* overflow: hidden; */
+}
+
+footer .icon a:hover {
+  transform: translateY(-30px);
+  opacity: 0;
+}
+footer .icon img {
+  width: 30%;
+  margin: 0;
+}
+
+footer .top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #8b8b8b;
+  opacity: 0.7;
+  color: white;
+  width: 35px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+footer .top:hover {
+  background-color: rgb(0, 153, 204);
+}
